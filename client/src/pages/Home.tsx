@@ -191,6 +191,25 @@ export default function Home() {
               </a>
             </div>
 
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-20 border-t border-[#C8A96A]/30">
+              <div className="animate-fade-in-up" style={{ animationDelay: "600ms" }}>
+                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">10+</div>
+                <div className="text-[#E7F0F6] text-sm mt-2">Anos de Experiência</div>
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: "700ms" }}>
+                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">500+</div>
+                <div className="text-[#E7F0F6] text-sm mt-2">Clientes Atendidos</div>
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: "800ms" }}>
+                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">95%</div>
+                <div className="text-[#E7F0F6] text-sm mt-2">Taxa de Satisfação</div>
+              </div>
+              <div className="animate-fade-in-up" style={{ animationDelay: "900ms" }}>
+                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">24/7</div>
+                <div className="text-[#E7F0F6] text-sm mt-2">Disponível</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
