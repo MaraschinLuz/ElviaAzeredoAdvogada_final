@@ -10,7 +10,7 @@
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write .",
-    "postbuild": "copy client\\public\\_redirects dist\\public\\_redirects"
+    "postbuild": "cp client/public/_redirects dist/public/_redirects"
   },
 
 
