@@ -192,57 +192,10 @@ export default function Home() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-20 border-t border-[#C8A96A]/30">
-              <div className="animate-fade-in-up" style={{ animationDelay: "600ms" }}>
-                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">10+</div>
-                <div className="text-[#E7F0F6] text-sm mt-2">Anos de Experiência</div>
-              </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: "700ms" }}>
-                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">500+</div>
-                <div className="text-[#E7F0F6] text-sm mt-2">Clientes Atendidos</div>
-              </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: "800ms" }}>
-                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">95%</div>
-                <div className="text-[#E7F0F6] text-sm mt-2">Taxa de Satisfação</div>
-              </div>
-              <div className="animate-fade-in-up" style={{ animationDelay: "900ms" }}>
-                <div className="text-3xl md:text-4xl font-bold text-[#C8A96A]">24/7</div>
-                <div className="text-[#E7F0F6] text-sm mt-2">Disponível</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
-      {/* Por Que Escolher Section */}
-      <section className="py-20 bg-[#F3F1ED] relative">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="text-center mb-16">
-              <h2 className="title-medium text-[#0B2E4A] mb-4">Por Que Escolher?</h2>
-              <p className="text-[#666666] text-lg max-w-2xl mx-auto">
-                Atendimento profissional, humanizado e focado nos seus resultados
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {highlights.map((item, index) => (
-              <AnimatedSection key={index} delay={index * 100}>
-                <div className="bg-[#FFFFFF] border border-[#E0E0E0] rounded-lg p-6 hover:border-[#C8A96A] hover:shadow-lg hover:shadow-[#C8A96A]/20 transition-all duration-300 group">
-                  <div className="text-[#C8A96A] mb-4 group-hover:scale-110 transition-transform">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-lg font-bold text-[#0B2E4A] mb-3">{item.title}</h3>
-                  <p className="text-[#666666] text-sm">{item.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sobre Section com Imagem de Fundo */}
+            {/* Sobre Section com Imagem de Fundo */}
       <section id="sobre" className="py-20 bg-[#062032] relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-30"
@@ -308,6 +261,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Por Que Escolher Section */}
+      <section className="py-20 bg-[#F3F1ED] relative">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="title-medium text-[#0B2E4A] mb-4">Por Que Escolher?</h2>
+              <p className="text-[#666666] text-lg max-w-2xl mx-auto">
+                Atendimento profissional, humanizado e focado nos seus resultados
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {highlights.map((item, index) => (
+              <AnimatedSection key={index} delay={index * 100}>
+                <div className="bg-[#FFFFFF] border border-[#E0E0E0] rounded-lg p-6 hover:border-[#C8A96A] hover:shadow-lg hover:shadow-[#C8A96A]/20 transition-all duration-300 group">
+                  <div className="text-[#C8A96A] mb-4 group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-[#0B2E4A] mb-3">{item.title}</h3>
+                  <p className="text-[#666666] text-sm">{item.description}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Serviços Section */}
       <section id="servicos" className="py-20 bg-[#F3F1ED]">
