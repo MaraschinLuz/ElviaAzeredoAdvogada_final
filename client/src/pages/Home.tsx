@@ -7,9 +7,8 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ${
-        isVisible ? "animate-fade-in-up opacity-100" : "opacity-0 translate-y-10"
-      }`}
+      className={`transition-all duration-700 ${isVisible ? "animate-fade-in-up opacity-100" : "opacity-0 translate-y-10"
+        }`}
       style={{ animationDelay: `${delay}ms` }}
     >
       {children}
@@ -159,7 +158,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative container mx-auto px-4 py-20 flex flex-col justify-center items-center text-center">
           <div className="max-w-4xl mx-auto">
-            
+
 
             <h1 className="title-large text-[#F3F1ED] mb-6 leading-tight animate-fade-in-down">
               Élvia Azeredo Advocacia Civil e Criminal
@@ -205,7 +204,7 @@ export default function Home() {
           className="w-14 h-14 drop-shadow-2xl hover:scale-105 transition-transform duration-200"
         />
       </a>
-            {/* Sobre Section com Imagem de Fundo */}
+      {/* Sobre Section com Imagem de Fundo */}
       <section id="sobre" className="py-20 bg-[#062032] relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-30"
@@ -219,9 +218,36 @@ export default function Home() {
 
         <div className="relative container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <AnimatedSection delay={200}>
+              <div className="relative">
+                <div className="rounded-2xl overflow-hidden border-2 border-[#C8A96A] shadow-2xl shadow-[#C8A96A]/30">
+                  <img
+                    src="/about-section.jpg"
+                    alt="Élvia Azeredo"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+            </AnimatedSection>
+
             {/* Text Content */}
             <AnimatedSection>
               <div>
+                {/* Values Grid */}
+                <div className="grid grid-cols-2 gap-4">
+                  {values.map((value, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <div className="text-[#C8A96A]">{value.icon}</div>
+                      <p className="text-sm font-semibold text-[#F3F1ED]">{value.title}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-[#0B2E4A]/50 border-l-4 border-[#C8A96A] p-6 rounded-lg mb-8">
+                  <p className="text-[#C8A96A] font-semibold text-lg italic">
+                    "Unir técnica, estratégia e humanidade para proteger os direitos de cada cliente."
+                  </p>
+                </div>
                 <div className="text-[#C8A96A] font-semibold mb-4">SOBRE</div>
                 <h2 className="title-medium text-[#F3F1ED] mb-6">
                   Técnica, Estratégia e Humanidade
@@ -238,36 +264,13 @@ export default function Home() {
                   que o cliente compreenda seus direitos, riscos e possibilidades.
                 </p>
 
-                <div className="bg-[#0B2E4A]/50 border-l-4 border-[#C8A96A] p-6 rounded-lg mb-8">
-                  <p className="text-[#C8A96A] font-semibold text-lg italic">
-                    "Unir técnica, estratégia e humanidade para proteger os direitos de cada cliente."
-                  </p>
-                </div>
 
-                {/* Values Grid */}
-                <div className="grid grid-cols-2 gap-4">
-                  {values.map((value, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <div className="text-[#C8A96A]">{value.icon}</div>
-                      <p className="text-sm font-semibold text-[#F3F1ED]">{value.title}</p>
-                    </div>
-                  ))}
-                </div>
+
+
               </div>
             </AnimatedSection>
 
-            {/* Image */}
-            <AnimatedSection delay={200}>
-              <div className="relative">
-                <div className="rounded-2xl overflow-hidden border-2 border-[#C8A96A] shadow-2xl shadow-[#C8A96A]/30">
-                  <img
-                    src="/about-section.jpg"
-                    alt="Élvia Azeredo"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
-            </AnimatedSection>
+
           </div>
         </div>
       </section>
@@ -315,25 +318,25 @@ export default function Home() {
           {/* Direito Civil */}
           <div className="mb-20">
             <AnimatedSection>
-                <div>
-                  <div className="text-[#C8A96A] font-semibold mb-4">DIREITO CIVIL</div>
-                  <h3 className="title-medium text-[#0B2E4A] mb-6">Soluções para Conflitos do Dia a Dia</h3>
+              <div>
+                <div className="text-[#C8A96A] font-semibold mb-4">DIREITO CIVIL</div>
+                <h3 className="title-medium text-[#0B2E4A] mb-6">Soluções para Conflitos do Dia a Dia</h3>
 
-                  <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
-                    Atendimento completo voltado à solução prática dos conflitos, sempre com foco em orientação clara e prevenção de litígios.
-                  </p>
+                <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
+                  Atendimento completo voltado à solução prática dos conflitos, sempre com foco em orientação clara e prevenção de litígios.
+                </p>
 
-                  <div className="space-y-3 mb-8">
-                    {civilServices.map((service, index) => (
-                      <div key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
-                        <span className="text-[#2C2C2C]">{service}</span>
-                      </div>
-                    ))}
-                  </div>
+                <div className="space-y-3 mb-8">
+                  {civilServices.map((service, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
+                      <span className="text-[#2C2C2C]">{service}</span>
+                    </div>
+                  ))}
                 </div>
-              </AnimatedSection>
-            </div>
+              </div>
+            </AnimatedSection>
+          </div>
 
           {/* Direito Criminal */}
           <div className="mb-20">
