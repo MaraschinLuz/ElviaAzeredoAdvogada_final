@@ -235,7 +235,7 @@ export default function Home() {
             <AnimatedSection>
               <div>
                 {/* Values Grid */}
-                <div className="grid grid-cols-2 gap-4" style="paddingBottom: 20px">
+                <div className="grid grid-cols-2 gap-4" style={{ paddingBottom: "20px" }}>
                   {values.map((value, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <div className="text-[#C8A96A]">{value.icon}</div>
