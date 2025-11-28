@@ -162,15 +162,11 @@ export default function Home() {
             
 
             <h1 className="title-large text-[#F3F1ED] mb-6 leading-tight animate-fade-in-down">
-              Advocacia Civil e Criminal
-              <br />
-              <span className="gradient-text">com técnica, estratégia e acolhimento</span>
+              Élvia Azeredo Advocacia Civil e Criminal
             </h1>
 
             <p className="text-lg md:text-xl text-[#C8A96A] mb-8 leading-relaxed animate-fade-in-up max-w-3xl mx-auto" style={{ animationDelay: "200ms" }}>
-              Atuação personalizada, análise detalhada e acompanhamento próximo em todas as
-              etapas do caso. Aqui, cada cliente é atendido com respeito, clareza e absoluto
-              sigilo profissional.
+              Aqui, cada cliente é atendido com respeito, clareza e absoluto sigilo profissional.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "400ms" }}>
@@ -195,6 +191,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/5554991163710?text=Olá%20Élvia,%20gostaria%20de%20uma%20orientação%20inicial"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50"
+        aria-label="Fale no WhatsApp"
+      >
+        <img
+          src="/whatsapp-float.svg"
+          alt="WhatsApp"
+          className="w-14 h-14 drop-shadow-2xl hover:scale-105 transition-transform duration-200"
+        />
+      </a>
             {/* Sobre Section com Imagem de Fundo */}
       <section id="sobre" className="py-20 bg-[#062032] relative overflow-hidden">
         <div

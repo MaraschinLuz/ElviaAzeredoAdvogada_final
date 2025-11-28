@@ -20,7 +20,11 @@ export default function Header() {
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 cursor-pointer hover-scale">
           <div className="w-10 h-10 bg-gradient-to-br from-[#0B2E4A] to-[#C8A96A] rounded-lg flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-lg">⚖️</span>
+            <img
+              src="/elvia_logo.jpg"
+              alt="Elvia Azeredo"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
           <span className="font-bold text-[#0B2E4A] hidden sm:inline text-lg">Élvia Azeredo</span>
         </a>
