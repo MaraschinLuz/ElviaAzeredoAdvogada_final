@@ -78,25 +78,34 @@ export default function Home() {
     { icon: <Shield className="w-8 h-8" />, title: "Ética e responsabilidade" },
     { icon: <Eye className="w-8 h-8" />, title: "Comunicação transparente" },
     { icon: <Heart className="w-8 h-8" />, title: "Respeito ao cliente" },
-    { icon: <Target className="w-8 h-8" />, title: "Compromisso com resultado" },
+    { icon: <Target className="w-8 h-8" />, title: "Compromisso com o máximo empenho" },
   ];
 
   const civilServices = [
-    "Contratos (elaboração, revisão e rescisão)",
-    "Responsabilidade civil e indenizações",
-    "Direito do consumidor",
-    "Conflitos imobiliários e de vizinhança",
-    "Direito de família (divórcio, guarda, pensão)",
-    "Assessoria jurídica preventiva",
+    "Advocacia Preventiva e Consultiva",
+    "Direito Contratual",
+    "Direito do Consumidor",
+    "Direito de Família e Sucessões",
+    "Direito Imobiliário e de Vizinhança",
+    "Responsabilidade Civil",
   ];
 
   const criminalServices = [
-    "Acompanhamento em delegacias e flagrantes",
-    "Defesa em inquéritos e ações penais",
+    "Acompanhamento em Sede Policial e Prisão em Flagrante",
+    "Atuação em Execução Penal e Revisão Criminal",
+    "Defesa em Inquéritos Policiais e Ações Penais",
+    "Defesa em Crimes em Espécie",
+    "Orientação Estratégica para Atos Processuais",
     "Tribunal do Júri",
-    "Crimes contra a vida, patrimônio ou honra",
-    "Execução penal e revisões criminais",
-    "Orientação antes de oitivas e depoimentos",
+  ];
+
+    const trabalhistaServices = [
+    "Acompanhamento em Sede Policial e Prisão em Flagrante",
+    "Atuação em Execução Penal e Revisão Criminal",
+    "Defesa em Inquéritos Policiais e Ações Penais",
+    "Defesa em Crimes em Espécie",
+    "Orientação Estratégica para Atos Processuais",
+    "Tribunal do Júri",
   ];
 
   const faqs = [
@@ -165,7 +174,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-[#C8A96A] mb-8 leading-relaxed animate-fade-in-up max-w-3xl mx-auto" style={{ animationDelay: "200ms" }}>
-              Aqui, cada cliente é atendido com respeito, clareza e absoluto sigilo profissional.
+              Aqui, reconhecemos a singularidade de cada cliente, oferecendo um atendimento pautado na empatia, no respeito, na clareza e no absoluto sigilo profissional.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "400ms" }}>
@@ -245,23 +254,24 @@ export default function Home() {
                 </div>
                 <div className="bg-[#0B2E4A]/50 border-l-4 border-[#C8A96A] p-6 rounded-lg mb-8">
                   <p className="text-[#C8A96A] font-semibold text-lg italic">
-                    "Unir técnica, estratégia e humanidade para proteger os direitos de cada cliente."
+                    "Articulamos inteligência estratégica, precisão técnica e empatia para construir defesas eficazes e proteger os interesses de nossos clientes."
                   </p>
                 </div>
                 <div className="text-[#C8A96A] font-semibold mb-4">SOBRE</div>
                 <h2 className="title-medium text-[#F3F1ED] mb-6">
-                  Técnica, Estratégia e Humanidade
+                  Empatia, Estratégia e Técnica.
                 </h2>
 
                 <p className="text-[#E7F0F6] text-lg mb-6 leading-relaxed">
-                  Atuo nas áreas de Direito Civil e Criminal com foco em oferecer um atendimento
-                  humano, estratégico e totalmente transparente. Cada situação é tratada com
-                  responsabilidade, ética e dedicação.
+                  A atuação profissional concentra-se nas áreas do Direito Civil, Criminal e Trabalhista, com a prática jurídica pautada em um atendimento humanizado, na elaboração de soluções estratégicas e na mais absoluta transparência na condução de cada caso.
                 </p>
 
                 <p className="text-[#E7F0F6] text-lg mb-6 leading-relaxed">
-                  Minha abordagem combina técnica, estudo constante e comunicação clara, permitindo
-                  que o cliente compreenda seus direitos, riscos e possibilidades.
+                  A metodologia de trabalho alia o rigor técnico ao estudo aprofundado e contínuo da legislação, doutrina e jurisprudência. Essa abordagem, somada a uma comunicação clara e precisa, visa assegurar ao cliente a plena compreensão de seus direitos, bem como dos riscos e das reais possibilidades inerentes à sua demanda, sempre com a máxima responsabilidade, ética e dedicação.
+                </p>
+
+                <p className="text-[#E7F0F6] text-lg mb-6 leading-relaxed">
+                  "Advocacia especializada nas áreas Cível, Criminal e Trabalhista, que une rigor técnico a um atendimento humanizado. A atuação é pautada em estratégias personalizadas e comunicação transparente, garantindo que o cliente compreenda seus direitos, riscos e possibilidades em cada etapa do processo, com máxima ética e dedicação."
                 </p>
 
 
@@ -319,11 +329,11 @@ export default function Home() {
           <div className="mb-20">
             <AnimatedSection>
               <div>
-                <div className="text-[#C8A96A] font-semibold mb-4">DIREITO CIVIL</div>
-                <h3 className="title-medium text-[#0B2E4A] mb-6">Soluções para Conflitos do Dia a Dia</h3>
+                <div className="text-[#C8A96A] font-semibold mb-6">DIREITO CIVIL</div>
+                <h3 className="title-medium text-[#0B2E4A] mb-6">Advocacia Consultiva e Contenciosa</h3>
 
                 <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
-                  Atendimento completo voltado à solução prática dos conflitos, sempre com foco em orientação clara e prevenção de litígios.
+                  Prática jurídica dedicada à tutela de direitos e à composição de lides, com especial enfoque na orientação jurídica e na prevenção de litígios, garantindo uma atuação clara e eficaz na defesa dos interesses do cliente.
                 </p>
 
                 <div className="space-y-3 mb-8">
@@ -342,11 +352,11 @@ export default function Home() {
           <div className="mb-20">
             <AnimatedSection delay={200}>
               <div>
-                <div className="text-[#C8A96A] font-semibold mb-4">DIREITO CRIMINAL</div>
-                <h3 className="title-medium text-[#0B2E4A] mb-6">Defesa Estratégica e Firme</h3>
+                <div className="text-[#C8A96A] font-semibold mb-6">DIREITO CRIMINAL</div>
+                <h3 className="title-medium text-[#0B2E4A] mb-6">Defesa Criminal Técnica e Combativa</h3>
 
                 <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
-                  Atuação estratégica e firme para garantir o exercício pleno dos direitos do cliente em todas as fases do processo penal.
+                  Atuação técnica e intransigente na salvaguarda das garantias fundamentais do cliente, assegurando uma defesa robusta e estratégica em todas as fases da persecução penal, desde a investigação até a execução da pena.
                 </p>
 
                 <div className="space-y-3 mb-8">
@@ -363,27 +373,7 @@ export default function Home() {
 
           {/* Additional Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <AnimatedSection>
-              <div className="bg-[#FFFFFF] rounded-lg p-8 border border-[#E0E0E0] hover:border-[#C8A96A] hover:shadow-lg hover:shadow-[#C8A96A]/20 transition-all duration-300">
-                <div className="flex items-center gap-3 mb-4">
-                  <Briefcase className="w-8 h-8 text-[#C8A96A]" />
-                  <h3 className="text-2xl font-bold text-[#0B2E4A]">Consultoria Jurídica Preventiva</h3>
-                </div>
 
-                <p className="text-[#666666] mb-6">
-                  Análise e orientação para evitar processos, trazendo segurança jurídica.
-                </p>
-
-                <ul className="space-y-3">
-                  {["Análise preventiva de contratos", "Orientação sobre riscos legais", "Assessoria contínua"].map((item, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-[#C8A96A]" />
-                      <span className="text-[#2C2C2C]">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
 
             <AnimatedSection delay={200}>
               <div className="bg-[#FFFFFF] rounded-lg p-8 border border-[#E0E0E0] hover:border-[#C8A96A] hover:shadow-lg hover:shadow-[#C8A96A]/20 transition-all duration-300">
