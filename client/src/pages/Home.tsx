@@ -251,7 +251,7 @@ const values = [
 
 
             <h1 className="title-large text-[#F3F1ED] mb-6 leading-tight animate-fade-in-down">
-              Élvia Azeredo Advocacia Civil e Criminal
+              Élvia Azeredo Advocacia Civil, Criminal e Trabalhista
             </h1>
 
             <p className="text-lg md:text-xl text-[#C8A96A] mb-8 leading-relaxed animate-fade-in-up max-w-3xl mx-auto" style={{ animationDelay: "200ms" }}>
