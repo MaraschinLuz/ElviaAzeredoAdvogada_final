@@ -410,7 +410,7 @@ const values = [
           <div className="mb-20">
             <AnimatedSection>
               <div>
-                <div className="text-[#C8A96A] font-semibold mb-6">DIREITO CIVIL</div>
+                <div className="text-xl text-[#C8A96A] font-semibold mb-6">DIREITO CIVIL</div>
                 <h3 className="title-medium text-[#0B2E4A] mb-6">Advocacia Consultiva e Contenciosa</h3>
 
                 <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
@@ -437,7 +437,7 @@ const values = [
           <div className="mb-20">
             <AnimatedSection delay={200}>
               <div>
-                <div className="text-[#C8A96A] font-semibold mb-6">DIREITO CRIMINAL</div>
+                <div className="text-xl text-[#C8A96A] font-semibold mb-6">DIREITO CRIMINAL</div>
                 <h3 className="title-medium text-[#0B2E4A] mb-6">Defesa Criminal Técnica e Combativa</h3>
 
                 <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
@@ -464,7 +464,7 @@ const values = [
           <div className="mb-20">
             <AnimatedSection delay={400}>
               <div>
-                <div className="text-[#C8A96A] font-semibold mb-6">DIREITO TRABALHISTA</div>
+                <div className="text-xl text-[#C8A96A] font-semibold mb-6">DIREITO TRABALHISTA</div>
                 <h3 className="title-medium text-[#0B2E4A] mb-6">Defesa dos Direitos do Trabalhador e da Empresa</h3>
 
                 <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
