@@ -16,6 +16,29 @@ function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; d
   );
 }
 
+function ServiceItem({ question, answer, isOpen, onClick }: { question: string; answer: string; isOpen: boolean; onClick: () => void }) {
+  return (
+    <div className="border-b border-[#E0E0E0] last:border-b-0">
+      <button
+        onClick={onClick}
+        className="w-full py-3 flex items-start gap-3 text-left hover:bg-[#F3F1ED] transition-colors rounded-lg px-2 -mx-2"
+      >
+        <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
+        <span className="text-[#2C2C2C] font-semibold flex-grow">{question}</span>
+        <ChevronDown
+          size={20}
+          className={`text-[#C8A96A] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+        />
+      </button>
+      {isOpen && (
+        <div className="pl-8 pr-2 pb-3 pt-1">
+          <p className="text-[#666666] text-sm leading-relaxed">{answer}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function FAQItem({ question, answer, isOpen, onClick }: { question: string; answer: string; isOpen: boolean; onClick: () => void }) {
   return (
     <div className="border border-[#C8A96A] rounded-lg overflow-hidden hover:shadow-lg hover:shadow-[#C8A96A]/30 transition-all duration-300">
@@ -394,10 +417,10 @@ const values = [
                   Prática jurídica dedicada à tutela de direitos e à composição de lides, com especial enfoque na orientação jurídica e na prevenção de litígios, garantindo uma atuação clara e eficaz na defesa dos interesses do cliente.
                 </p>
 
-                <div className="max-w-3xl mx-auto space-y-4">
+                <div className="space-y-3 mb-8">
                   {civilServices.map((service, index) => (
                     <AnimatedSection key={index} delay={index * 50}>
-                      <FAQItem
+                      <ServiceItem
                         question={service.question}
                         answer={service.answer}
                         isOpen={openFAQ === `civil-${index}`}
@@ -421,10 +444,10 @@ const values = [
                   Atuação técnica e intransigente na salvaguarda das garantias fundamentais do cliente, assegurando uma defesa robusta e estratégica em todas as fases da persecução penal, desde a investigação até a execução da pena.
                 </p>
 
-                <div className="max-w-3xl mx-auto space-y-4">
+                <div className="space-y-3 mb-8">
                   {criminalServices.map((service, index) => (
                     <AnimatedSection key={index} delay={index * 50}>
-                      <FAQItem
+                      <ServiceItem
                         question={service.question}
                         answer={service.answer}
                         isOpen={openFAQ === `criminal-${index}`}
@@ -448,10 +471,10 @@ const values = [
                   Atuação consultiva e contenciosa, defendendo os interesses de empregados e empregadores em questões de vínculo, jornada, remuneração, segurança e extinção do contrato de trabalho.
                 </p>
 
-                <div className="max-w-3xl mx-auto space-y-4">
+                <div className="space-y-3 mb-8">
                   {trabalhistaServices.map((service, index) => (
                     <AnimatedSection key={index} delay={index * 50}>
-                      <FAQItem
+                      <ServiceItem
                         question={service.question}
                         answer={service.answer}
                         isOpen={openFAQ === `trabalhista-${index}`}
