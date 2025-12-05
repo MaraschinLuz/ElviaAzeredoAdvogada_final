@@ -39,7 +39,7 @@ function FAQItem({ question, answer, isOpen, onClick }: { question: string; answ
 }
 
 export default function Home() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [openFAQ, setOpenFAQ] = useState<string | null>(null);
 
   const highlights = [
     {
@@ -82,31 +82,88 @@ const values = [
   ];
 
   const civilServices = [
-    "Advocacia Preventiva e Consultiva",
-    "Direito Contratual",
-    "Direito do Consumidor",
-    "Direito de Família e Sucessões",
-    "Direito Imobiliário e de Vizinhança",
-    "Responsabilidade Civil",
+    {
+      question: "Advocacia Preventiva e Consultiva",
+      answer: "Orientação jurídica para mitigar riscos e prevenir litígios, garantindo segurança jurídica em negócios e relações pessoais.",
+    },
+    {
+      question: "Direito Contratual",
+      answer: "Elaboração, análise, revisão e distrato de contratos cíveis, assegurando a proteção dos interesses e a validade dos negócios jurídicos.",
+    },
+    {
+      question: "Direito do Consumidor",
+      answer: "Defesa dos direitos do consumidor em face de práticas abusivas, produtos ou serviços defeituosos e cobranças indevidas.",
+    },
+    {
+      question: "Direito de Família e Sucessões",
+      answer: "Atuação especializada em questões de divórcio (consensual e litigioso), reconhecimento e dissolução de união estável, partilha de bens, guarda de filhos, regulamentação de convivência, fixação e revisão de alimentos (pensão alimentícia), além de inventários e testamentos.",
+    },
+    {
+      question: "Direito Imobiliário e de Vizinhança",
+      answer: "Assessoria em conflitos relacionados a imóveis, como posse, propriedade, aluguéis, e questões de direito de vizinhança.",
+    },
+    {
+      question: "Responsabilidade Civil",
+      answer: "Busca por reparação de danos materiais, morais e estéticos decorrentes de atos ilícitos, acidentes ou falhas na prestação de serviços.",
+    },
   ];
 
   const criminalServices = [
-    "Acompanhamento em Sede Policial e Prisão em Flagrante",
-    "Atuação em Execução Penal e Revisão Criminal",
-    "Defesa em Inquéritos Policiais e Ações Penais",
-    "Defesa em Crimes em Espécie",
-    "Orientação Estratégica para Atos Processuais",
-    "Tribunal do Júri",
+    {
+      question: "Acompanhamento em Sede Policial e Prisão em Flagrante",
+      answer: "Assistência jurídica imediata em delegacias, garantindo a observância dos direitos e garantias fundamentais do cliente durante o auto de prisão em flagrante e no curso do inquérito policial.",
+    },
+    {
+      question: "Atuação em Execução Penal e Revisão Criminal",
+      answer: "Defesa dos interesses do sentenciado na fase de execução da pena, buscando a progressão de regime, livramento condicional e outros benefícios legais, bem como o ajuizamento de revisões criminais para desconstituir sentenças condenatórias.",
+    },
+    {
+      question: "Defesa em Inquéritos Policiais e Ações Penais",
+      answer: "Elaboração de respostas à acusação, alegações finais e interposição de recursos em todas as instâncias, com o objetivo de assegurar o devido processo legal, a ampla defesa e o contraditório.",
+    },
+    {
+      question: "Defesa em Crimes em Espécie",
+      answer: "Atuação especializada na defesa de acusações relativas a crimes contra a vida (homicídio), contra o patrimônio (furto, roubo, estelionato) e contra a honra (calúnia, injúria, difamação), entre outros.",
+    },
+    {
+      question: "Orientação Estratégica para Atos Processuais",
+      answer: "Preparação técnica do cliente para participação em oitivas, interrogatórios e demais atos da persecução penal, visando a proteção de seus direitos e a melhor estratégia defensiva.",
+    },
+    {
+      question: "Tribunal do Júri",
+      answer: "Atuação combativa em todas as fases do procedimento do Júri, culminando na defesa em plenário perante o Conselho de Sentença nos casos de crimes dolosos contra a vida.",
+    },
   ];
 
-    const trabalhistaServices = [
-    "Vínculo Empregatício e Contratação",
-    "Jornada de Trabalho e Descansos",
-    "Remuneração e Direitos Salariais",
-    "Saúde, Segurança e Estabilidade",
-    "Extinção do Contrato de Trabalho",
-    "Relações Coletivas e Sindicais",
-    "Contencioso Trabalhista",
+  const trabalhistaServices = [
+    {
+      question: "Vínculo Empregatício e Contratação",
+      answer: "Atuação na análise e discussão sobre a existência ou não da relação de emprego, bem como nas formalidades da contratação. (Sub-itens: Reconhecimento de Vínculo Empregatício, Modalidades de Contrato de Trabalho, Alteração do Contrato de Trabalho)",
+    },
+    {
+      question: "Jornada de Trabalho e Descansos",
+      answer: "Defesa relacionada ao controle, à duração e aos intervalos da jornada de trabalho. (Sub-itens: Horas Extras e Banco de Horas, Intervalos Intrajornada e Interjornada, Trabalho Noturno, Cargos de Confiança e Exceções ao Controle de Ponto)",
+    },
+    {
+      question: "Remuneração e Direitos Salariais",
+      answer: "Atuação focada na correta contraprestação pelo trabalho e na isonomia salarial. (Sub-itens: Equiparação Salarial, Desvio e Acúmulo de Função, Adicionais de Insalubridade e Periculosidade, Comissões e Prêmios)",
+    },
+    {
+      question: "Saúde, Segurança e Estabilidade",
+      answer: "Defesa dos direitos relacionados ao meio ambiente de trabalho seguro e à proteção contra a dispensa arbitrária. (Sub-itens: Acidente de Trabalho e Doenças Ocupacionais, Estabilidades Provisórias, Assédio Moral e Sexual)",
+    },
+    {
+      question: "Extinção do Contrato de Trabalho",
+      answer: "Atuação nas diversas modalidades de término do contrato e na correta apuração das verbas devidas. (Sub-itens: Rescisão Indireta do FGTS, Reversão de Justa Causa, Verbas Rescisórias)",
+    },
+    {
+      question: "Relações Coletivas e Sindicais",
+      answer: "Atuação na interface entre empresas, empregados e sindicatos. (Sub-itens: Negociações Coletivas, Direito de Greve)",
+    },
+    {
+      question: "Contencioso Trabalhista",
+      answer: "Representação em todas as fases do processo judicial na Justiça do Trabalho. (Sub-itens: Reclamação Trabalhista, Defesa e Recursos, Execução Trabalhista)",
+    },
   ];
 
   const faqs = [
@@ -337,12 +394,16 @@ const values = [
                   Prática jurídica dedicada à tutela de direitos e à composição de lides, com especial enfoque na orientação jurídica e na prevenção de litígios, garantindo uma atuação clara e eficaz na defesa dos interesses do cliente.
                 </p>
 
-                <div className="space-y-3 mb-8">
+                <div className="max-w-3xl mx-auto space-y-4">
                   {civilServices.map((service, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
-                      <span className="text-[#2C2C2C]">{service}</span>
-                    </div>
+                    <AnimatedSection key={index} delay={index * 50}>
+                      <FAQItem
+                        question={service.question}
+                        answer={service.answer}
+                        isOpen={openFAQ === `civil-${index}`}
+                        onClick={() => setOpenFAQ(openFAQ === `civil-${index}` ? null : `civil-${index}`)}
+                      />
+                    </AnimatedSection>
                   ))}
                 </div>
               </div>
@@ -360,12 +421,16 @@ const values = [
                   Atuação técnica e intransigente na salvaguarda das garantias fundamentais do cliente, assegurando uma defesa robusta e estratégica em todas as fases da persecução penal, desde a investigação até a execução da pena.
                 </p>
 
-                <div className="space-y-3 mb-8">
+                <div className="max-w-3xl mx-auto space-y-4">
                   {criminalServices.map((service, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
-                      <span className="text-[#2C2C2C]">{service}</span>
-                    </div>
+                    <AnimatedSection key={index} delay={index * 50}>
+                      <FAQItem
+                        question={service.question}
+                        answer={service.answer}
+                        isOpen={openFAQ === `criminal-${index}`}
+                        onClick={() => setOpenFAQ(openFAQ === `criminal-${index}` ? null : `criminal-${index}`)}
+                      />
+                    </AnimatedSection>
                   ))}
                 </div>
               </div>
@@ -383,12 +448,16 @@ const values = [
                   Atuação consultiva e contenciosa, defendendo os interesses de empregados e empregadores em questões de vínculo, jornada, remuneração, segurança e extinção do contrato de trabalho.
                 </p>
 
-                <div className="space-y-3 mb-8">
+                <div className="max-w-3xl mx-auto space-y-4">
                   {trabalhistaServices.map((service, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
-                      <span className="text-[#2C2C2C]">{service}</span>
-                    </div>
+                    <AnimatedSection key={index} delay={index * 50}>
+                      <FAQItem
+                        question={service.question}
+                        answer={service.answer}
+                        isOpen={openFAQ === `trabalhista-${index}`}
+                        onClick={() => setOpenFAQ(openFAQ === `trabalhista-${index}` ? null : `trabalhista-${index}`)}
+                      />
+                    </AnimatedSection>
                   ))}
                 </div>
               </div>
