@@ -74,7 +74,7 @@ export default function Home() {
     },
   ];
 
-  const values = [
+const values = [
     { icon: <Shield className="w-8 h-8" />, title: "Ética e responsabilidade" },
     { icon: <Eye className="w-8 h-8" />, title: "Comunicação transparente" },
     { icon: <Heart className="w-8 h-8" />, title: "Respeito ao cliente" },
@@ -100,22 +100,23 @@ export default function Home() {
   ];
 
     const trabalhistaServices = [
-    "Acompanhamento em Sede Policial e Prisão em Flagrante",
-    "Atuação em Execução Penal e Revisão Criminal",
-    "Defesa em Inquéritos Policiais e Ações Penais",
-    "Defesa em Crimes em Espécie",
-    "Orientação Estratégica para Atos Processuais",
-    "Tribunal do Júri",
+    "Vínculo Empregatício e Contratação",
+    "Jornada de Trabalho e Descansos",
+    "Remuneração e Direitos Salariais",
+    "Saúde, Segurança e Estabilidade",
+    "Extinção do Contrato de Trabalho",
+    "Relações Coletivas e Sindicais",
+    "Contencioso Trabalhista",
   ];
 
   const faqs = [
     {
-      question: "Qual é o primeiro passo para contratar seus serviços?",
-      answer: "O primeiro passo é entrar em contato via WhatsApp ou e-mail para uma conversa inicial. Você descreve sua situação e recebe uma orientação inicial com clareza sobre seus direitos e possibilidades.",
+      question: "Qual o procedimento para contratação?",
+      answer: "O contato inicial deve ser realizado por WhatsApp ou e-mail para uma análise preliminar do caso. Nesta primeira etapa, o cliente expõe a situação fática e recebe um parecer jurídico inicial, com orientações claras sobre os direitos aplicáveis e as estratégias processuais ou extrajudiciais cabíveis.",
     },
     {
-      question: "Como funciona o atendimento online?",
-      answer: "O atendimento online é realizado por vídeo chamada, telefone ou WhatsApp. Você escolhe a forma que se sente mais confortável. Todos os atendimentos online têm a mesma qualidade que os presenciais.",
+      question: "Qual a modalidades de atendimento remoto?",
+      answer: "A assessoria jurídica pode ser prestada por meios digitais, como videoconferência, contato telefônico ou aplicativos de mensagem instantânea, conforme a conveniência do cliente. Independentemente da plataforma escolhida, são assegurados o mesmo padrão de excelência, confidencialidade e rigor técnico do atendimento presencial, garantindo um serviço completo e seguro.",
     },
     {
       question: "Qual é o valor da consulta inicial?",
@@ -371,23 +372,44 @@ export default function Home() {
             </AnimatedSection>
           </div>
 
+          {/* Direito Trabalhista */}
+          <div className="mb-20">
+            <AnimatedSection delay={400}>
+              <div>
+                <div className="text-[#C8A96A] font-semibold mb-6">DIREITO TRABALHISTA</div>
+                <h3 className="title-medium text-[#0B2E4A] mb-6">Defesa dos Direitos do Trabalhador e da Empresa</h3>
+
+                <p className="text-[#2C2C2C] text-lg mb-8 leading-relaxed">
+                  Atuação consultiva e contenciosa, defendendo os interesses de empregados e empregadores em questões de vínculo, jornada, remuneração, segurança e extinção do contrato de trabalho.
+                </p>
+
+                <div className="space-y-3 mb-8">
+                  {trabalhistaServices.map((service, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-[#C8A96A] flex-shrink-0 mt-1" />
+                      <span className="text-[#2C2C2C]">{service}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+
           {/* Additional Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-
-            <AnimatedSection delay={200}>
+            <AnimatedSection delay={600}>
               <div className="bg-[#FFFFFF] rounded-lg p-8 border border-[#E0E0E0] hover:border-[#C8A96A] hover:shadow-lg hover:shadow-[#C8A96A]/20 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
                   <Video className="w-8 h-8 text-[#C8A96A]" />
-                  <h3 className="text-2xl font-bold text-[#0B2E4A]">Atendimento Online</h3>
+                  <h3 className="text-2xl font-bold text-[#0B2E4A]">Assessoria Jurídica Digital</h3>
                 </div>
 
                 <p className="text-[#666666] mb-6">
-                  Consultas e acompanhamento jurídico realizados por vídeo ou telefone.
+                  Prestação de consultoria e acompanhamento jurídico por meio de plataformas virtuais, garantindo conveniência, agilidade e a mesma confidencialidade do atendimento presencial.
                 </p>
 
                 <ul className="space-y-3">
-                  {["Consultas por vídeo", "Atendimento por telefone", "Flexibilidade de horários"].map((item, i) => (
+                  {["Consultas por Videoconferência: Realização de reuniões estratégicas por meio de plataformas digitais para a análise aprofundada de casos, documentos e para a definição de teses jurídicas.", "Atendimento Telefônico: Canal direto para o esclarecimento de dúvidas pontuais e para o acompanhamento célere do andamento processual.", "Agendamento Flexível: Disponibilidade de horários adaptados à rotina do cliente, otimizando a comunicação e a gestão do tempo."].map((item, i) => (
                     <li key={i} className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-[#C8A96A]" />
                       <span className="text-[#2C2C2C]">{item}</span>
