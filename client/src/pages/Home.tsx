@@ -601,7 +601,7 @@ const values = [
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.5832404856635!2d-52.40937!3d-28.2478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f7b8c8c8c8c8c9%3A0x0!2sPasso%20Fundo%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.750029468356!2d-52.394531424513396!3d-28.245265875878513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2c0701ff6ec19%3A0x41e2a83eb8879d34!2sR.%20Lava%20P%C3%A9s%2C%20386%20-%20Petr%C3%B3polis%2C%20Passo%20Fundo%20-%20RS%2C%2099050-040!5e0!3m2!1spt-BR!2sbr!4v1765461588285!5m2!1spt-BR!2sbr"
                 />
               </div>
             </AnimatedSection>
