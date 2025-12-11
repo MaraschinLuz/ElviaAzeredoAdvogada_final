@@ -586,7 +586,7 @@ const values = [
                     <MapPin size={20} className="text-[#C8A96A]" />
                     Localização
                   </h3>
-                  <p className="text-[#C8A96A] font-semibold">Passo Fundo, RS</p>
+                  <p className="text-[#C8A96A] font-semibold">R. Lava Pés, 386 - Petrópolis, Passo Fundo - RS, 99050-040</p>
                 </div>
               </div>
             </AnimatedSection>
