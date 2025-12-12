@@ -351,9 +351,7 @@ const values = [
                   A metodologia de trabalho alia o rigor técnico ao estudo aprofundado e contínuo da legislação, doutrina e jurisprudência. Essa abordagem, somada a uma comunicação clara e precisa, visa assegurar ao cliente a plena compreensão de seus direitos, bem como dos riscos e das reais possibilidades inerentes à sua demanda, sempre com a máxima responsabilidade, ética e dedicação.
                 </p>
 
-                <p className="text-[#E7F0F6] text-lg mb-6 leading-relaxed">
-                  "Advocacia especializada nas áreas Cível, Criminal e Trabalhista, que une rigor técnico a um atendimento humanizado. A atuação é pautada em estratégias personalizadas e comunicação transparente, garantindo que o cliente compreenda seus direitos, riscos e possibilidades em cada etapa do processo, com máxima ética e dedicação."
-                </p>
+              
 
 
 
